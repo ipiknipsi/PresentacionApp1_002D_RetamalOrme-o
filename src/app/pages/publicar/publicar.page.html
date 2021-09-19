@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios">
+
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Compra/Venta</ion-title>
+    <ion-avatar slot="end">
+      <img src="/assets/usuario.jpg" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label class="font" color="secondary" position="floating" >Nombre del Articulo</ion-label>
+    <ion-input  clearInput value=""></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label class="font" color="secondary" position="floating">Categoria</ion-label>
+    <ion-input clearInput value=""></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label  class="font" color="secondary" position="floating">Descripción del articulo</ion-label>
+    <ion-textarea  ></ion-textarea>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-label class="font" color="secondary">Stock Disponible</ion-label>
+    <ion-input type="number" value="1" min=1 max=20></ion-input>
+    
+    
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label class="font" color="secondary">Imagenes del Producto</ion-label>
+    <ion-button expand="block" href="/inicio" color="success">Subir</ion-button>
+  </ion-item>
+  
+  <br>
+  <ion-list>
+    <ion-radio-group value="nuevo">
+      <ion-list-header>
+        <ion-label class="font" color="secondary">Estado</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label class="font">Nuevo</ion-label>
+        <ion-radio slot="start" value="nuevo"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label class="font">Usado</ion-label>
+        <ion-radio slot="start" value="usado"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label class="font">Reacondicionado</ion-label>
+        <ion-radio slot="start" value="reacondicionado"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+  
+
+  
+
+
+<ion-button expand="block" color="secondary" href="/inicio">Publicar</ion-button>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button href="/inicio">
+    <ion-icon name="help"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+</ion-content>
